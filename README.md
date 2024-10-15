@@ -2,8 +2,9 @@
 1. You need to install node.js
 2. You need to open terminal.
 3. Go to the project folder
-4. As I used "create-react-app" boilprate to run project ### `npm start`
-5. If you have some problem with fetching data. Please make sure you have in public folder companies.json and dashboard.json. If they are empty you can take a look what the data should be in types/index.js as CompaniesResponse and DashboardResponse interfaces.
+4. run `npm install` 
+5. As I used "create-react-app" boilprate to run project with `npm start`
+6. If you have some problem with fetching data. Please make sure you have in public folder companies.json and dashboard.json. If they are empty you can take a look what the data should be in types/index.js as CompaniesResponse and DashboardResponse interfaces.
 
 
 P.S
