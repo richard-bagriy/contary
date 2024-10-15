@@ -1,5 +1,5 @@
 # How to run the app
-1. You need to install node.js
+1. You need to install node.js (v20.18.0)
 2. You need to open terminal.
 3. Go to the project folder
 4. run `npm install` 
