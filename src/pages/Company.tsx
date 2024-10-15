@@ -28,8 +28,8 @@ export const CompanyPage: React.FC = (): ReactElement => {
             { key: "2", label: "Start date", span: 12, children: company?.start_date },
             { key: "3", label: "End date", span: 12, children: company?.end_date },
             { key: "4", label: "Stage", span: 12, children: <Tag color="blue">{company?.stage}</Tag> },
-            { key: "5", label: "Profit", span: 12, children: formatNumber(company?.profit || 0) },
-            { key: "6", label: "Expected profit", span: 12, children: formatNumber(company?.expected_profit || 0) },
+            { key: "5", label: "Profit", span: 12, children: formatNumber(company?.profit || 0)  + "$" },
+            { key: "6", label: "Expected profit", span: 12, children: formatNumber(company?.expected_profit || 0) + "$" },
             { key: "7", label: "Progress", span: 12, children: <Progress size="small" percent={company?.progress || 0} />},
             { key: "8", label: "Industries", span: 12, children: company?.industries?.map(ind => <Tag color="purple">{ind}</Tag>)},
         ]}></Descriptions>

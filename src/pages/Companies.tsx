@@ -4,12 +4,10 @@ import { useFetch } from "../hooks";
 import { CompaniesResponse, CompanyItem } from "../types";
 import { useComapniesContext } from "../context/companies.context";
 import { Progress, Tag } from "antd";
-import { Error, Table } from "../components";
+import { Table } from "../components";
 import { ColumnType } from "antd/es/table";
 import { formatNumber } from "../utils";
 import { Link } from "react-router-dom";
-
-            // "industries": ["Telecommunications", "E_commerce"]
 
 const columns: ColumnType<CompanyItem>[] = [
     {
@@ -45,11 +43,6 @@ const columns: ColumnType<CompanyItem>[] = [
         title: "Expected Profit",
         dataIndex: "expected_profit",
         render: (value) => formatNumber(value) + "$"
-    },
-    {
-        title: "Progress",
-        dataIndex: "progress",
-        render: (value) => <Progress percent={Number(value)} size="small" />
     },
     {
         title: "Progress",
